@@ -1,4 +1,4 @@
-const library = [
+	 const library = [
   {
     author: "Bill Gates",
     title: "The Road Ahead",
@@ -17,9 +17,12 @@ const library = [
 ];
 
 const numberOfBooksRead = () => {
-  // write your code here
+  // Filter the books with readingStatus equal to true
+  const readBooks = library.filter(book => book.readingStatus === true);
+
+  // Return the number of books that have been read
+  return readBooks.length;
 };
 
 // Do not change the code below
-
 alert(numberOfBooksRead());
